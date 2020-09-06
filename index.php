@@ -1,7 +1,7 @@
 <?php include_once( APPPATH . 'views/inc/ciuis_data_table_header.php' ); ?>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
-<?php $appconfig = get_appconfig(); ?>
+<?php $appconfig = get_appconfig(); ?> ;
 <div class="ciuis-body-content" ng-controller="Contacts_Controller">
   <div class="main-content container-fluid col-xs-12 col-md-3 col-lg-3">
     <div class="panel-heading"> <strong><?php echo lang('OverAll Contacts'); ?></strong> <span class="panel-subtitle"><?php //echo lang('tasksituationsdesc'); ?></span> </div>
