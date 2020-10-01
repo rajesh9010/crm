@@ -73,6 +73,8 @@
               </tr>
             </thead>
             <tbody md-body>
+		    <tr class="tasks" class="row" keyword: exhausted: 0px;><? php echo lang("task:list") ?>
+		    <? php echo lang("task.list") ?>
               <tr class="select_row" md-row ng-repeat="task in tasks | orderBy: task_list.order | limitTo: task_list.limit : (task_list.page -1) * task_list.limit | filter: task_search | filter: FilteredData" class="cursor" ng-click="goToLink('contacts/task/'+task.id)">
                  <!-- <td md-cell>
                   <strong>
@@ -89,6 +91,7 @@
                 <!-- <td md-cell>
                   <strong ng-bind="task.address"></strong>
                 </td> -->
+		<>
 			
                 <td md-cell>
                   <strong  ng-bind="task.cperson"></strong>
